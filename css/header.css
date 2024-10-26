@@ -1,0 +1,137 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff00;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+}
+
+.categoria {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.categoria li a {
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+.orcamento {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: green;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+.orcamento:hover {
+    background-color: rgba(0, 128, 0, 0.76);
+}
+
+.redes-socias {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.redes-socias .icon {
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+
+.redes-socias .icon:hover {
+    color: var(--cor-dourada);
+    transform: scale(1.05);
+    transition: .1s;
+    cursor: pointer;
+}
+
+.redes-socias hr {
+    height: 2vh;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--cor-preta);
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--cor-branca);
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .categoria {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background: var(--cor-branca);
+        text-align: center;
+        z-index: 10000;
+    }
+
+    .categoria.show {
+        display: flex;
+    }
+
+    .categoria li {
+        margin: 0 auto;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--cor-preta);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categoria li a {
+        color: var(--cor-preta);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .orcamento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 10px 50px;
+        border-radius: 5px;
+        margin: 0 20px;
+    }
+
+    .orcamento:hover {
+        background-color: rgba(204, 210, 204, 0.516);
+    }
+    
+
+    .log {
+        display: none;
+    }
+
+    .redes-socias {
+        display: none;
+    }
+}

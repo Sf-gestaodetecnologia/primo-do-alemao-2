@@ -1,0 +1,315 @@
+.home {
+    background-image: url("../img/protese-capilar-masculina.png.webp");
+    background-color: red;
+    width: 100%;
+    height: auto;
+}
+
+.visagismo {
+    background-image: url("../img/visagismo.webp");
+    background-color: red;
+    width: 100%;
+    height: auto;
+}
+
+.container-home {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: #ffffff2d;
+}
+
+.left {
+    width: 50%;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    width: 50%;
+    text-align: right;
+}
+
+.right h2 {
+    font-weight: 500;
+}
+
+.right h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.right p {
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.button-home {
+    margin-top: 30px;
+}
+
+.saiba-mais {
+    background-color: var(--cor-dourada);
+    text-decoration: none;
+    color: var(--cor-branca);
+    padding: 15px 80px;
+    border: 2px solid #000;
+    border-radius: 30px 1px;
+}
+
+.servicos-conteudo {
+    background-color: #000;
+}
+
+.desc-servicos {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.desc-servicos span {
+    color: var(--cor-dourada);
+
+}
+
+.desc-servicos h1 {
+    color: var(--cor-branca);
+    font-size: 3rem;
+}
+
+.servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bloco img {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 20vh;
+    border: 3px solid var(--cor-dourada);
+}
+
+.bloco {
+    padding: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+.bloco .desc-servico {
+    color: var(--cor-branca);
+}
+
+.desc-servico p {
+    margin-top: 10px;
+    line-height: 25px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.desc-servico a {
+    background-color: var(--cor-dourada);
+    text-decoration: none;
+    color: var(--cor-branca);
+    padding: 15px 80px;
+    border: 2px solid #000;
+    border-radius: 30px 1px;
+}
+
+/* Serviços - 2 */
+
+.servicos-2 {
+    background-color: var(--cor-branca);
+}
+
+.container-img-2 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.img-servicos-2 {
+    margin-top: 5rem;
+    border-right: 1px solid #0000006b;
+    padding: 20px;
+    width: 100%;
+}
+
+.img-servicos-2 img {
+    width: 50%;
+    height: 20vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-img-2 p {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--cor-dourada);
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:768px) {
+    .home {
+        background-image: url("../img/protese-capilar-masculina.png.webp");
+        background-color: red;
+        width: 100%;
+        height: auto;
+    }
+    
+    .visagismo {
+        background-image: url("../img/visagismo.webp");
+        background-color: red;
+        width: 100%;
+        height: 75vh;
+    }
+
+    .container-home {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0rem;
+        justify-content: space-around;
+        background-color: #ffffff2d;
+        width: 100%;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+    }
+    
+    .left img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .right {
+        width: 90%;
+        text-align: left;
+    }
+    
+    .right h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    
+    .right h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .right p {
+        margin-top: 10px;
+        font-weight: 500;
+        line-height: 25px;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    
+    .button-home {
+        margin-top: 30px;
+    }
+    
+    .saiba-mais {
+        background-color: var(--cor-dourada);
+        text-decoration: none;
+        color: var(--cor-branca);
+        padding: 15px 80px;
+        border: 2px solid #000;
+        border-radius: 30px 1px;
+    }
+
+    .servicos-conteudo {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .bloco img {
+        border: 1px solid #fff;
+        width: 100%;
+        height: auto;
+        border: 3px solid var(--cor-dourada);
+    }
+
+    .bloco {
+        padding: 20px;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    /* Serviços - 2 */
+
+    .servicos-2 {
+        background-color: var(--cor-branca);
+    }
+    
+    .container-img-2 {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Apenas uma coluna no mobile */
+        gap: 1rem;
+    }
+    
+    .img-servicos-2 {
+        margin-top: 1rem;
+        border-right: none;
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .img-servicos-2 img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container-img-2 p {
+        text-align: center;
+        margin-top: 50px;
+        color: var(--cor-dourada);
+        font-size: 1.1rem;
+    }
+    
+}

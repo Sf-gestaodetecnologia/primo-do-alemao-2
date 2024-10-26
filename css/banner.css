@@ -1,0 +1,129 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-h1-h2 {
+    color: #fff;
+    margin-top: 15%;
+    justify-content: center;
+}
+
+.desc-h1-h2 h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.desc-h1-h2 h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.orcamento-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.banner-icon-zap {
+    border: 1px solid var(--cor-branca);
+    border-radius: 20px;
+    padding: 15px 80px;
+    text-decoration: none;
+    color: var(--cor-branca);
+}
+
+/* Seta */
+.seta-1 {
+    height: 10vh;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta-banner{
+    width: 10px;
+    height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 6px;
+    animation: move 1.1s infinite ease-in-out;
+}
+.seta-banner:nth-of-type(1){
+    transform: rotate(-45deg);
+}
+
+.seta-banner:nth-of-type(2){
+    transform: rotate(45deg);
+}
+
+@keyframes move {
+    0%{margin-top: 0;}
+    50%{margin-top: 10px;}
+    100%{margin-top: 0;}
+}
+
+#video-background {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.mobile {
+    display: none;
+}
+
+#video-mobile {
+    display: none;
+}
+
+.cards-blocos-banner {
+    position: absolute;
+    bottom: 0;
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        height: 80vh;
+        width: auto;
+    }
+
+    .desc-h1-h2 {
+        position: absolute;
+        color: #fff;
+        top: 25%;
+        width: 100%;
+        padding: 20px 20px;
+        height: auto;
+    }
+
+    .desc-h1-h2 h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .desc-h1-h2 h2 {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
